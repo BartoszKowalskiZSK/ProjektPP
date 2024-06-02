@@ -1,0 +1,43 @@
+﻿@model IEnumerable<User>
+@inject Microsoft.AspNetCore.Identity.UserManager<OnlineHotelBooking.Models.User> _userManager
+
+<!-- Tabela z użytkownikami -->
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Imie</th>
+            <th scope="col">Nazwisko</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            <th scope="col">Edytuj</th>
+            <th scope="col">Usuń</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var roles = await _userManager.GetRolesAsync(item);
+            <tr>
+                <th scope="row">@item.Email</th>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.UserName</td>
+                <td>@roles</td>
+                <td>
+                    <form asp-controller="User" asp-action="ChangeRole" method="POST">
+                        <input type="hidden" name="userId" value="@item.Id" />
+                        <select name="roleId">
+                            @foreach (var role in ViewBag.Roles)
+                            {
+                                <option value="@role.Id">@role.Name</option>
+                            }
+                        </select>
+                        <button type="submit">Zmień rolę</button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,71 @@
+﻿@using OnlineHotelBooking.Data.Enum
+@model IEnumerable<Room>
+﻿@using Microsoft.AspNetCore.Identity
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    body {
+        background: #f4f4f4;
+    }
+
+    .banner {
+        background: #a770ef;
+        background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+        background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    }
+</style>
+<div class="container-fluid">
+    <div class="px-lg-5">
+        @if(User.Identity.IsAuthenticated && User.IsInRole("worker"))
+        {
+            <a asp-controller="Room" asp-action="Create"><button class="btn-info w-100">DODAJ POKÓJ</button></a>
+        }
+        <!-- For demo purpose -->
+        <div class="row py-5">
+            <div class="col-lg-12 mx-auto">
+                <div class="text-white p-5 shadow-sm rounded banner">
+                    <h1 class="display-4">Nasze pokoje</h1>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <div class="row justify-content-center">
+            @foreach (var item in Model)
+            {
+                <!-- Gallery item -->
+                <div class="col-xl-4 col-lg-5 col-md-6 mb-10">
+                    <div class="bg-white rounded shadow-sm">
+                        <img src="https://as1.ftcdn.net/v2/jpg/02/71/08/28/1000_F_271082810_CtbTjpnOU3vx43ngAKqpCPUBx25udBrg.jpg" alt="zdjęcie pokoju" class="img-fluid card-img-top">
+                        <div class="p-4">
+                            <h5> <p href="#" class="text-dark">Pokój @item.RoomType.ToString()</p></h5>
+                            @if (item.RoomType==RoomType.Single)
+                            {
+                                <h5> <p href="#" class="text-dark">Pokój jednoosobowy z jednym łóżkiem</p></h5>
+                            }
+                            else if (item.RoomType==RoomType.Double)
+                            {
+                                <h5> <p href="#" class="text-dark">Pokój dwuosobowy z jednym łóżkiem podwójnym</p></h5>
+                            }
+                            else if (item.RoomType == RoomType.Twin)
+                            {
+                                <h5> <p href="#" class="text-dark">Pokój dwuosobowy z dwoma łóżkami</p></h5>
+                            }
+                            <p class="small text-muted mb-0">Numer pokoju @item.Number</p>
+                            <p class="mt-1 font-weight-bold mb-2">Cena za noc: @item.Price zł</p>
+                            @if(User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="Rent" asp-action="Create" asp-route-roomId="@item.Id" asp-route-roomPrice="@item.Price"><button class="px-3 py-2 mt-4 btn btn-outline-primary w-100 rounded-pill font-weight-normal">Wynajmij</button></a>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+            }
+        </div>
+    </div>
+</div>

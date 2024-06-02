@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\views\\user\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\views\\user\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\views\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\views\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\data\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\data\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\views\\rent\\allcurrentrents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\views\\rent\\allcurrentrents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|c:\\users\\barto\\desktop\\projekt\\onlinehotelbooking\\onlinehotelbooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D572643-E250-400A-9C6E-D0750BDD5F38}|OnlineHotelBooking\\OnlineHotelBooking.csproj|solutionrelative:onlinehotelbooking\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Room\\Create.cshtml",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Views\\Room\\Create.cshtml",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Room\\Create.cshtml",
+              "RelativeToolTip": "OnlineHotelBooking\\Views\\Room\\Create.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T01:09:48.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Seed.cs",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Data\\Seed.cs",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Data\\Seed.cs",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Data\\Seed.cs",
+              "RelativeToolTip": "OnlineHotelBooking\\Data\\Seed.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T01:07:18.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllCurrentRents.cshtml",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Rent\\AllCurrentRents.cshtml",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Views\\Rent\\AllCurrentRents.cshtml",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Rent\\AllCurrentRents.cshtml",
+              "RelativeToolTip": "OnlineHotelBooking\\Views\\Rent\\AllCurrentRents.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T00:54:22.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\User\\Users.cshtml",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Views\\User\\Users.cshtml",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\User\\Users.cshtml",
+              "RelativeToolTip": "OnlineHotelBooking\\Views\\User\\Users.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T00:54:14.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "OnlineHotelBooking\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:52:59.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentController.cs",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\RentController.cs",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Controllers\\RentController.cs",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\RentController.cs",
+              "RelativeToolTip": "OnlineHotelBooking\\Controllers\\RentController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:50:49.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Controllers\\UserController.cs",
+              "RelativeToolTip": "OnlineHotelBooking\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:50:23.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OnlineHotelBooking\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAYwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T00:48:49.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Room\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Views\\Room\\Index.cshtml",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Views\\Room\\Index.cshtml",
+              "RelativeToolTip": "OnlineHotelBooking\\Views\\Room\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABgAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T00:45:47.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "OnlineHotelBooking\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\barto\\Desktop\\projekt\\OnlineHotelBooking\\OnlineHotelBooking\\Models\\Room.cs",
+              "RelativeToolTip": "OnlineHotelBooking\\Models\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:45:42.186Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

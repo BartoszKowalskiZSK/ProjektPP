@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Rent>
+@inject Microsoft.AspNetCore.Identity.UserManager<OnlineHotelBooking.Models.User> _userManager
+@inject OnlineHotelBooking.Data.ApplicationDbContext _context
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Numer</th>
+            <th scope="col">Email</th>
+            <th scope="col">Od</th>
+            <th scope="col">Do</th>
+            <th scope="col">Cena</th>
+            <th scope="col">Opłacone</th>
+            <th scope="col">Aktywne</th>
+            @if (User.Identity.IsAuthenticated && User.IsInRole("worker"))
+            {
+                <th scope="col">Edytuj</th>
+            }
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var user = await _userManager.FindByIdAsync(item.UserId);
+            var room = _context.Rooms.FirstOrDefault(r => r.Id == item.RoomId);
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@(room != null ? room.Number : "Brak numeru")</td>
+                <td>@user.Email</td>
+                <td>@item.From.ToShortDateString()</td>
+                <td>@item.To.ToShortDateString()</td>
+                <td>@item.Price</td>
+                <td>@(item.Paid ? "Tak" : "Nie")</td>
+                <td>@(item.IsActive ? "Tak" : "Nie")</td>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("worker"))
+                {
+                    <td>
+                        <a asp-controller="Rent" asp-action="Edit" asp-route-id="@item.Id">
+                            <button>Edytuj</button>
+                        </a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

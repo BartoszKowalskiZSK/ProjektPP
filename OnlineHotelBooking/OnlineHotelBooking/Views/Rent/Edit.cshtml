@@ -1,0 +1,45 @@
+﻿@model Rent
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="POST" asp-action="Edit">
+    <!-- Pole UserId -->
+    <input asp-for="UserId" class="form-control" required type="hidden" value="@Model.UserId">
+    <!-- Zmienić wartość 1 na właściwą wartość userId -->
+    <!-- Pole RoomId -->
+    <input asp-for="RoomId" class="form-control" required type="hidden" value="@Model.RoomId">
+    <!-- Tutaj również wartość możesz zmienić na właściwą wartość RoomId z Modelu -->
+    <!-- Pole Price -->
+    <input asp-for="Price" class="form-control" required type="hidden" value="@Model.Price">
+
+    <!-- Pole IsActive -->
+    <div class="form-group">
+        <label asp-for="IsActive" class="control-label">Aktywne:</label>
+        <div class="checkbox">
+            <label>
+                <input asp-for="IsActive" type="checkbox" checked="@Model.IsActive">
+            </label>
+        </div>
+    </div>
+
+    <!-- Pole Paid -->
+    <div class="form-group">
+        <label asp-for="Paid" class="control-label">Zapłacono:</label>
+        <div class="checkbox">
+            <label>
+                <input asp-for="Paid" type="checkbox" checked="@Model.Paid">
+            </label>
+        </div>
+    </div>
+
+    <!-- Ukryte pola From i To -->
+    <input asp-for="From" class="form-control" id="From" type="hidden" value="@Model.From" />
+    <input asp-for="To" class="form-control" id="To" type="hidden" value="@Model.To" />
+
+    <!-- Przycisk Submit -->
+    <button type="submit" class="btn btn-block btn-success btn-lg">Submit</button>
+</form>
+

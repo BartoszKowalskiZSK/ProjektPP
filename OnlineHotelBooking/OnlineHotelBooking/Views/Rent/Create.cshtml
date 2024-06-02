@@ -1,0 +1,66 @@
+﻿@model Rent
+@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.AspNetCore.Identity;
+@using System.Security.Claims;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var today = DateTime.Now.ToString("yyyy-MM-dd");
+    var tomorrow = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
+}
+
+<form method="POST" asp-action="Create">
+    <input id="RoomPrice" class="form-control" type="hidden" value="@ViewData["RoomPrice"]" />
+    <input asp-for="UserId" class="form-control" required type="hidden" value="@User.FindFirstValue(ClaimTypes.NameIdentifier)"> <!--Zmienić 1 na userId-->
+    <input asp-for="RoomId" class="form-control" required type="hidden" value="@ViewData["RoomId"]"> <!--Zmienić 1 na userId-->
+    <input asp-for="Price" class="form-control" required type="hidden" value="">
+    <input asp-for="IsActive" class="form-control" required type="hidden" value="true"> <!--Zmienić 1 na userId-->
+    <input asp-for="Paid" class="form-control" required type="hidden" value="false">
+    <div class="form-group">
+        <label asp-for="From" class="control-label">Podaj datę rozpoczęcia:</label>
+        <input asp-for="From" class="form-control" id="From" type="date" min="@today" />
+        <span asp-validation-for="From"  class="text-danger"></span>
+    </div><br />
+    <div class="form-group">
+        <label asp-for="To" class="control-label">Podaj datę zakończenia:</label>
+        <input asp-for="To" class="form-control" id="To" type="date" min="@tomorrow" />
+        <span asp-validation-for="To" class="text-danger"></span>
+    </div><br />
+    <button type="button" id="CalculatePrice" class="btn btn-info">Oblicz cenę</button>
+    <br /><br />
+    <div><span id="TotalPrice"></span></div>
+    <br />
+    <button type="submit" class="btn btn-block btn-success btn-lg">Submit</button>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var calculateButton = document.getElementById("CalculatePrice");
+
+        function calculateTotalPrice() {
+            var fromDateInput = document.getElementById("From");
+            var toDateInput = document.getElementById("To");
+            var totalPriceDisplay = document.getElementById("TotalPrice");
+            var roomPrice = parseFloat(document.getElementById("RoomPrice").value);
+            var priceInput = document.getElementById("Price");
+
+            var fromDate = new Date(fromDateInput.value);
+            var toDate = new Date(toDateInput.value);
+
+            // Obliczamy różnicę między datami w dniach
+            var timeDifference = toDate.getTime() - fromDate.getTime();
+            var nightCount = Math.ceil(timeDifference / (1000 * 3600 * 24));
+
+            // Obliczamy całkowitą cenę
+            var totalPrice = nightCount * roomPrice;
+            totalPriceDisplay.innerText = "Total Price: " + totalPrice.toFixed(2) + " zł";
+
+            // Przypisujemy obliczoną cenę do pola Price w formularzu
+            priceInput.value = totalPrice.toFixed(0);
+        }
+
+        calculateButton.addEventListener("click", calculateTotalPrice);
+    });
+
+</script>

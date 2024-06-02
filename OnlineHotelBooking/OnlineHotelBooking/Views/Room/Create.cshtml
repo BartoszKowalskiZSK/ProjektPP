@@ -1,0 +1,28 @@
+﻿@using OnlineHotelBooking.Data.Enum
+@model Room
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="POST" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Number">Numer pokoju</label>
+        <input asp-for="Number" class="form-control" aria-describedby="emailHelp" required>
+        <span asp-validation-for="Number" class="text-danger"></span>
+    </div><br />
+    <div class="form-group">
+        <label asp-for="RoomType">Typ:</label>
+        <select asp-for="RoomType" asp-items="@Html.GetEnumSelectList<RoomType>()">
+            <option>--Wybierz--</option>
+        </select>
+        <span asp-validation-for="RoomType" class="text-danger"></span>
+    </div><br />
+    <div class="form-group">
+        <label asp-for="Price">Cena za noc</label>
+        <input asp-for="Price" class="form-control" aria-describedby="emailHelp" required>
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div><br /><br />
+    <button type="submit" class="btn btn-block btn-success btn-lg">Submit</button>
+</form>
